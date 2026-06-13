@@ -1,56 +1,57 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f3f0e8" />
-    <meta name="description" content="杨耀鹏，南京大学软件工程博士生，研究智能软件工程、LLM for Coding、自动程序修复与自主工作智能体。" />
+    <meta name="description" content="Yaopeng Yang is a software engineering Ph.D. student at Nanjing University researching LLMs for coding, program repair, and autonomous agents." />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="杨耀鹏 · Yaopeng Yang" />
-    <meta property="og:description" content="智能软件工程、LLM for Coding、自动程序修复与自主工作智能体" />
-    <title>杨耀鹏 · Yaopeng Yang</title>
+    <meta property="og:description" content="Intelligent software engineering, LLMs for coding, automated program repair, and autonomous agents." />
+    <title>Yaopeng Yang · Personal Homepage</title>
     <link rel="icon" href="./assets/Favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script type="module" src="./app.js"></script>
+    <link rel="stylesheet" href="./styles.css?v=20260613-cn-final" />
+    <script type="module" src="./app.js?v=20260613-cn-final-3"></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到正文</a>
-    <header class="site-header" aria-label="主导航">
-      <a class="brand" href="#top" aria-label="返回首页">
-        <span class="brand-mark" data-brand-mark>YN</span>
-        <span data-brand-name>Your Name</span>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Back to home">
+        <span class="brand-mark" data-brand-mark>YYP</span>
+        <span data-brand-name>Yaopeng Yang</span>
       </a>
-      <nav class="nav-links" aria-label="页面章节">
-        <a href="#about" data-i18n="navAbout">关于</a>
-        <a href="#experience" data-i18n="navExperience">经历</a>
-        <a href="#work" data-i18n="navWork">成果</a>
-        <a href="#contact" data-i18n="navContact">联系</a>
+      <nav class="nav-links" aria-label="Page sections">
+        <a href="#top" data-i18n="navAbout">About</a>
+        <a href="#experience" data-i18n="navExperience">Education</a>
+        <a href="#news" data-i18n="navNews">News</a>
+        <a href="#work" data-i18n="navWork">Publication</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
       </nav>
       <div class="header-actions">
-        <button class="text-button" type="button" data-language-toggle aria-label="切换语言">EN</button>
-        <a class="pill-button" href="#contact" data-i18n="talk">聊一聊</a>
+        <button class="text-button" type="button" data-language-toggle aria-label="Switch language">中</button>
+        <a class="pill-button" href="#contact" data-i18n="talk">Contact me</a>
       </div>
     </header>
 
     <main id="main">
       <section class="hero" id="top">
         <div class="hero-copy">
-          <p class="eyebrow reveal" data-i18n="availability">开放合作与新机会</p>
-          <h1 class="hero-title reveal" aria-label="Your Name">
-            <span data-hero-line-one>YOUR</span>
-            <span class="title-offset" data-hero-line-two>NAME</span>
+          <h1 class="hero-title reveal" aria-label="Yaopeng Yang">
+            <span data-hero-line-one>YAO-PENG</span>
+            <span class="title-offset" data-hero-line-two>YANG</span>
           </h1>
-          <div class="hero-summary reveal">
-            <p class="hero-role" data-role>Researcher &amp; Builder</p>
-            <p data-intro>请提供你的简历，我会将这里改写成简洁、有辨识度的个人介绍。</p>
+          <div class="hero-summary reveal" style="display:block;max-width:780px">
+            <p class="hero-bio" data-hero-bio>Here is <strong>Yao-Peng Yang (杨耀鹏)</strong>.<br>
+            <br>
+            I am currently a <strong>first-year Ph.D. student</strong> specializing in <strong>Software Engineering (SE) at the Software Institute, Nanjing University</strong>. I have the privilege of being advised by Prof. <a class="text-link" href="https://software.nju.edu.cn/luobin/" target="_blank" rel="noreferrer">Bin Luo</a>. I received my master's degree from Nanjing University in 2025 and my bachelor's degree in Computer Science and Technology from Jiangnan University in 2022. My research interests center on artificial intelligence techniques for SE, coding, and computer usage.<br>
+            <br>
+            If you are interested in any aspect of my work, I would love to chat and collaborate. Please email me at <a class="text-link" href="mailto:602025320022@smail.nju.edu.cn">602025320022@smail.nju.edu.cn</a></p>
           </div>
         </div>
-        <aside class="focus-panel reveal" aria-labelledby="focus-title">
+        <aside class="focus-panel reveal" aria-label="Research focus">
           <div class="section-kicker">
-            <span data-i18n="focusLabel">当前关注</span>
-            <span>01 - 03</span>
+            <span data-i18n="focusLabel">Research focus</span>
           </div>
-          <h2 id="focus-title" data-i18n="focusTitle">把复杂问题做成清晰、可靠的产品</h2>
           <div class="focus-list" data-focus-list></div>
         </aside>
         <div class="scroll-cue" aria-hidden="true">
@@ -59,35 +60,40 @@
         </div>
       </section>
 
-      <section class="statement section-pad" id="about">
-        <div class="section-kicker reveal">
-          <span data-i18n="aboutLabel">个人简介</span>
-          <span>About</span>
-        </div>
-        <p class="statement-text reveal" data-about></p>
-        <div class="fact-grid reveal" data-facts></div>
-      </section>
-
       <section class="timeline-section section-pad" id="experience">
-        <div class="section-heading reveal">
+        <div class="section-heading compact-heading reveal">
           <div>
             <p class="eyebrow" data-i18n="experienceLabel">经历与教育</p>
-            <h2 data-i18n="experienceTitle">一路做过的事</h2>
           </div>
-          <p data-i18n="experienceHint">从最近开始，保留真正重要的节点。</p>
         </div>
         <div class="timeline" data-timeline></div>
       </section>
 
+      <section class="news-section section-pad" id="news">
+        <div class="section-heading compact-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="newsLabel">News</p>
+          </div>
+        </div>
+        <div class="news-timeline" data-news-list></div>
+      </section>
+
       <section class="work-section section-pad" id="work">
-        <div class="section-heading reveal">
+        <div class="section-heading compact-heading reveal">
           <div>
             <p class="eyebrow" data-i18n="workLabel">精选成果</p>
-            <h2 data-i18n="workTitle">研究、项目与作品</h2>
           </div>
-          <p data-i18n="workHint">每一项都说明问题、贡献和结果。</p>
         </div>
         <div class="work-grid" data-work-grid></div>
+      </section>
+
+      <section class="projects-section section-pad" id="projects">
+        <div class="section-heading compact-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="projectsLabel">Projects</p>
+          </div>
+        </div>
+        <div class="project-grid" data-project-grid></div>
       </section>
 
       <section class="principles section-pad" aria-labelledby="principles-title">
