@@ -1,4 +1,4 @@
-import { interfaceText, siteData } from "./Site_Data.js?v=20260613-cn-final-3";
+import { interfaceText, siteData } from "./Site_Data.js?v=20260613-cn-final-4";
 
 const preferredLanguage = localStorage.getItem("site-language");
 let language = preferredLanguage || "en";
@@ -6,7 +6,7 @@ let language = preferredLanguage || "en";
 const emphasizeAuthor = (authors) => authors.replaceAll("Yaopeng Yang", "<strong>Yaopeng Yang</strong>");
 const heroBio = {
   zh: `我是 <strong>Yao-Peng Yang（杨耀鹏）</strong>。<br><br>
-            我目前是南京大学软件学院<strong>软件工程方向的一年级博士生</strong>，导师为 <a class="text-link" href="https://software.nju.edu.cn/luobin/" target="_blank" rel="noreferrer">骆宾教授</a>。我于 2025 年在南京大学获得硕士学位，于 2022 年在江南大学获得计算机科学与技术学士学位。我的研究兴趣集中在面向软件工程的人工智能技术，尤其是 AI for Coding、软件工程大模型、程序修复、仓库级推理和自主编码智能体。<br><br>
+            我目前是南京大学软件学院<strong>软件工程方向的一年级博士生</strong>，导师为 <a class="text-link" href="https://software.nju.edu.cn/luobin/" target="_blank" rel="noreferrer">骆斌教授</a>。我于 2025 年在南京大学获得硕士学位，于 2022 年在江南大学获得计算机科学与技术学士学位。我的研究兴趣集中在面向软件工程的人工智能技术，尤其是 AI for Coding、软件工程大模型、程序修复、仓库级推理和自主编码智能体。<br><br>
             如果你对我的研究或项目感兴趣，欢迎联系与合作。邮箱：<a class="text-link" href="mailto:602025320022@smail.nju.edu.cn">602025320022@smail.nju.edu.cn</a>`,
   en: `Here is <strong>Yao-Peng Yang (杨耀鹏)</strong>.<br>
             <br>

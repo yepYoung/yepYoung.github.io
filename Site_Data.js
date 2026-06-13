@@ -24,7 +24,7 @@ export const siteData = {
         period: "2025.09 - 至今",
         title: "软件工程 · 博士生",
         place: "南京大学软件学院 LipLab · 南京 · 中国",
-        description: "研究智能软件工程与自主协作智能体。<br>导师：骆宾教授、李传艺助理教授。",
+        description: "研究智能软件工程与自主协作智能体。<br>导师：骆斌教授、李传艺助理教授。",
         tags: ["Ph.D.", "Intelligent SE", "Cowork Agents"],
       },
       {
