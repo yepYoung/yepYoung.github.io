@@ -1,4 +1,4 @@
-import { interfaceText, siteData } from "./Site_Data.js?v=20260613-cn-final-4";
+import { interfaceText, siteData } from "./Site_Data.js?v=20260613-cn-final-5";
 
 const preferredLanguage = localStorage.getItem("site-language");
 let language = preferredLanguage || "en";
