@@ -1,7 +1,6 @@
-import { interfaceText, siteData } from "./Site_Data.js?v=20260613-cn-final-5";
+import { interfaceText, siteData } from "./Site_Data.js?v=20260613-cn-final-6";
 
-const preferredLanguage = localStorage.getItem("site-language");
-let language = preferredLanguage || "en";
+let language = "en";
 
 const emphasizeAuthor = (authors) => authors.replaceAll("Yaopeng Yang", "<strong>Yaopeng Yang</strong>");
 const heroBio = {
@@ -178,7 +177,6 @@ const observeReveals = () => {
 
 document.querySelector("[data-language-toggle]").addEventListener("click", () => {
   language = language === "zh" ? "en" : "zh";
-  localStorage.setItem("site-language", language);
   render();
 });
 
