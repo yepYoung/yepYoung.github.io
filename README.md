@@ -17,11 +17,11 @@ python3 -m http.server 4173
 ## 部署结构
 
 - 主站：GitHub Pages，作为免费、成熟且可回滚的发布源。
-- 加速镜像：EdgeOne Makers 全球可用区（不含中国大陆），无需 ICP 备案。
-- 独立域名候选：`yepyoung.me`。
-- 构建命令留空，输出目录为 `.`。
+- 独立域名：`yepyoung.me`，在阿里云注册并使用阿里云 DNS。
+- 加速主站：阿里云 ESA Functions & Pages，全球节点（不含中国内地），无需 ICP 备案。
+- 构建命令留空，静态资源目录为 `.`。
 
-`edgeone.json` 已包含基础安全响应头与静态资源缓存规则。
+`esa.jsonc` 固化了阿里云 ESA Pages 的静态部署配置。
 
 ## 隐私
 

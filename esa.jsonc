@@ -1,0 +1,9 @@
+{
+  "name": "yaopeng-homepage",
+  "installCommand": "",
+  "buildCommand": "",
+  "assets": {
+    "directory": ".",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}
