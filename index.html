@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f0e8" />
+    <meta name="description" content="杨耀鹏，南京大学软件工程博士生，研究智能软件工程、LLM for Coding、自动程序修复与自主工作智能体。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="杨耀鹏 · Yaopeng Yang" />
+    <meta property="og:description" content="智能软件工程、LLM for Coding、自动程序修复与自主工作智能体" />
+    <title>杨耀鹏 · Yaopeng Yang</title>
+    <link rel="icon" href="./assets/Favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回首页">
+        <span class="brand-mark" data-brand-mark>YN</span>
+        <span data-brand-name>Your Name</span>
+      </a>
+      <nav class="nav-links" aria-label="页面章节">
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#experience" data-i18n="navExperience">经历</a>
+        <a href="#work" data-i18n="navWork">成果</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+      </nav>
+      <div class="header-actions">
+        <button class="text-button" type="button" data-language-toggle aria-label="切换语言">EN</button>
+        <a class="pill-button" href="#contact" data-i18n="talk">聊一聊</a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" data-i18n="availability">开放合作与新机会</p>
+          <h1 class="hero-title reveal" aria-label="Your Name">
+            <span data-hero-line-one>YOUR</span>
+            <span class="title-offset" data-hero-line-two>NAME</span>
+          </h1>
+          <div class="hero-summary reveal">
+            <p class="hero-role" data-role>Researcher &amp; Builder</p>
+            <p data-intro>请提供你的简历，我会将这里改写成简洁、有辨识度的个人介绍。</p>
+          </div>
+        </div>
+        <aside class="focus-panel reveal" aria-labelledby="focus-title">
+          <div class="section-kicker">
+            <span data-i18n="focusLabel">当前关注</span>
+            <span>01 - 03</span>
+          </div>
+          <h2 id="focus-title" data-i18n="focusTitle">把复杂问题做成清晰、可靠的产品</h2>
+          <div class="focus-list" data-focus-list></div>
+        </aside>
+        <div class="scroll-cue" aria-hidden="true">
+          <span data-i18n="scroll">向下浏览</span>
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+      <section class="statement section-pad" id="about">
+        <div class="section-kicker reveal">
+          <span data-i18n="aboutLabel">个人简介</span>
+          <span>About</span>
+        </div>
+        <p class="statement-text reveal" data-about></p>
+        <div class="fact-grid reveal" data-facts></div>
+      </section>
+
+      <section class="timeline-section section-pad" id="experience">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="experienceLabel">经历与教育</p>
+            <h2 data-i18n="experienceTitle">一路做过的事</h2>
+          </div>
+          <p data-i18n="experienceHint">从最近开始，保留真正重要的节点。</p>
+        </div>
+        <div class="timeline" data-timeline></div>
+      </section>
+
+      <section class="work-section section-pad" id="work">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="workLabel">精选成果</p>
+            <h2 data-i18n="workTitle">研究、项目与作品</h2>
+          </div>
+          <p data-i18n="workHint">每一项都说明问题、贡献和结果。</p>
+        </div>
+        <div class="work-grid" data-work-grid></div>
+      </section>
+
+      <section class="principles section-pad" aria-labelledby="principles-title">
+        <div class="principles-title reveal">
+          <p class="eyebrow" data-i18n="principlesLabel">工作方式</p>
+          <h2 id="principles-title" data-i18n="principlesTitle">清楚地思考，认真地交付。</h2>
+        </div>
+        <div class="principle-list" data-principles></div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow light" data-i18n="contactLabel">保持联系</p>
+          <h2 data-i18n="contactTitle">有值得一起完成的事？</h2>
+          <p data-i18n="contactBody">邮件是最稳妥的联系方式。我通常会在两天内回复。</p>
+        </div>
+        <div class="contact-links reveal" data-contact-links></div>
+        <footer>
+          <span data-footer-name>Your Name</span>
+          <span data-i18n="footerText">设计与代码均为本站定制</span>
+          <span data-year></span>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
