@@ -71,6 +71,29 @@ button { font: inherit; }
 .focus-card h3, .focus-card p { margin: 0; }
 .focus-card h3 { font-size: 15px; }
 .focus-card p { margin-top: 5px; color: var(--muted); font-size: 12px; }
+.focus-github-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 16px;
+  align-items: center;
+  margin-top: 16px;
+  padding: 18px;
+  color: var(--white);
+  background: var(--ink);
+  border: 1px solid color-mix(in srgb, var(--ink) 78%, var(--line));
+  border-radius: 18px;
+  transition: transform .22s ease, background .22s ease;
+}
+.focus-github-card:hover { transform: translateY(-3px); background: var(--signal); }
+.focus-github-card span {
+  color: rgba(255,255,255,.64);
+  font-size: 11px;
+  font-weight: 760;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.focus-github-card strong { grid-column: 1; font-size: 15px; letter-spacing: -.01em; overflow-wrap: anywhere; }
+.focus-github-card em { grid-column: 2; grid-row: 1 / span 2; font-style: normal; font-weight: 760; }
 .scroll-cue { position: absolute; bottom: 38px; left: 0; display: flex; align-items: center; gap: 14px; color: var(--muted); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
 .scroll-line { width: 80px; height: 1px; background: var(--line); overflow: hidden; }
 .scroll-line::after { content: ""; display: block; width: 35%; height: 1px; background: var(--ink); animation: travel 2s ease-in-out infinite; }
